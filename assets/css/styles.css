@@ -1,0 +1,480 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Login Container */
+.login-container {
+    background: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.login-form button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.login-form button:hover {
+    background-color: #003399;
+}
+
+.login-form a {
+    display: block;
+    margin-top: 15px;
+    color: #6c63ff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+/* Register Container */
+.register-container {
+    background: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.register-container h2 {
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.register-form button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.register-form button:hover {
+    background-color: #003399;
+}
+
+
+/* Banner styles */
+.main-banner {
+    position: relative;
+    height: 80vh; /
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+/* Form Container */
+#transaction-form {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#transaction-form label {
+    font-weight: bold;
+    color: #0044cc;
+}
+
+#transaction-form select,
+#transaction-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#transaction-form button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+#transaction-form button:hover {
+    background-color: #003399;
+}
+
+/* Transaction History */
+#transaction-history {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#transaction-history h2 {
+    color: #0044cc;
+}
+
+#response-message {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections du Dashboard */
+.dashboard-section {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(33.33% - 20px); /* Largeur adaptable pour 3 colonnes */
+    text-align: center;
+}
+
+.dashboard-section h2 {
+    color: #0044cc;
+    margin-bottom: 15px;
+}
+
+.dashboard-section p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.dashboard-section .btn {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.dashboard-section .btn:hover {
+    background-color: #003399;
+}
+
+
+/* Liste des comptes */
+.account-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.account-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-list li strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-section {
+        flex: 1 1 100%; /* Une colonne sur petits écrans */
+    }
+}
+/* Form Container */
+form {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    color: #0044cc;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #003399;
+}
+
+/* Success/Error Messages */
+main p {
+    text-align: center;
+    font-weight: bold;
+}
+
+main p[style="color: red;"] {
+    color: red;
+}
+
+main p[style="color: green;"] {
+    color: green;
+}
+/* Profile Container */
+.profile-container {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.profile-container h2 {
+    color: #0044cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container label {
+    font-weight: bold;
+    color: #0044cc;
+    display: block;
+    margin-top: 10px;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.profile-container button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.profile-container button:hover {
+    background-color: #003399;
+}
+
+/* Success/Error Messages */
+.profile-container p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile-container p[style="color: red;"] {
+    color: red;
+}
+
+.profile-container p[style="color: green;"] {
+    color: green;
+}
+/* Section Solde Total */
+.total-balance {
+    background: #e7f3ff;
+    border: 1px solid #b3d1ff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total-balance h2 {
+    color: #0044cc;
+    margin-bottom: 10px;
+}
+
+.total-balance p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+/* Transaction List */
+.transaction-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 0.9em;
+}
+
+.transaction-list li {
+    background: #f9f9f9;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.transaction-list li:nth-child(even) {
+    background: #f1f1f1;
+}
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+
+
